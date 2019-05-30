@@ -1,0 +1,128 @@
+body {
+  font-family: "Segoe UI", "Roboto", Tahoma;
+}
+
+.checkout {
+  display: flex;
+  padding: 15px 0px 0px 330px;
+  width: calc(50% - 80px);
+}
+
+.page2 .checkout .sinopsis {
+  transform: translateX(0);
+  opacity: 1;
+}
+
+.checkout .sinopsis {
+  width: 220px;
+}
+
+button.back {
+  border: none;
+  background-color: transparent;
+  outline: none;
+  margin-bottom: 8px;
+  cursor: pointer;
+}
+
+.checkout .legend {
+  float: right;
+  text-align: right;
+  margin-right: 15px;
+}
+
+.checkout .seats {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.checkout .screen {
+  height: 18px;
+  background-color: #e1cfba;
+  font-size: 12px;
+  text-align: center;
+  margin-top: 8px;
+}
+
+.checkout .total {
+  position: absolute;
+  bottom: 20px;
+  right: 17px;
+  text-align: right;
+}
+
+.checkout img.cover {
+  height: 320px;
+  width: 220px;
+  background-position: center;
+  background-size: cover;
+}
+
+.checkout .seat.taken,
+.checkout .legend li:last-child:after {
+  background-color: #b71c1c;
+}
+
+.checkout .seat {
+  margin: 2px;
+  padding: 3px;
+  background: green;
+  color: white;
+  border-radius: 2px;
+  width: 30px;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.4s ease;
+}
+
+.checkout .legend li:after {
+  content: "";
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  background-color: green;
+  border-radius: 2px;
+  position: relative;
+  right: -5px;
+  top: 3px;
+}
+
+.page2 .checkout section {
+  transform: translateX(0);
+  opacity: 1;
+}
+.checkout section {
+  padding-left: 15px;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+div {
+  display: block;
+}
+
+table {
+  text-align: center;
+}
+
+.Displaytable {
+  text-align: center;
+}
+.Displaytable td,
+.Displaytable th {
+  border: 1px solid;
+  text-align: left;
+}
+.seat.selected {
+  background-color: #898964;
+}
+.seat.booked {
+  background-color: #b71c1c;
+  pointer-events: none;
+}

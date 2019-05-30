@@ -1,0 +1,226 @@
+/* ---------------------------------------------
+    Assets
+--------------------------------------------- */
+
+@import "bourbon"; // http://bourbon.io/
+
+/* ---------------------------------------------
+    Colors
+--------------------------------------------- */
+
+$black: #000000;
+$white: #ffffff;
+
+$dark-gray: #344760;
+$light-gray: #b7bcc3;
+
+$main: #fe8888;
+
+/* ---------------------------------------------
+    Fonts
+--------------------------------------------- */
+
+$roboto: 'Roboto Condensed', sans-serif; // https://www.google.com/fonts/specimen/Roboto+Condensed
+
+/* ---------------------------------------------
+    Stylings
+--------------------------------------------- */
+
+html, body {
+  height: 100%;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  @include display(flex);
+  @include justify-content(center);
+  @include align-items(flex-start);
+  background-color: $main;
+  font-family: $roboto;
+  
+  @media (min-height: 580px) {
+    @include align-items(center);
+  }
+}
+
+.container {
+  width: 100%;
+  max-width: 420px;
+  @include padding(null 20px);
+}
+
+.invoice {
+  background-color: $white;
+  border-radius: 10px;
+  box-shadow: 0 14px 28px rgba(0,0,0,0.10), 0 10px 10px rgba(0,0,0,0.13);
+  @include margin(50px 0px);
+  @include padding(50px 30px 30px);
+  
+  header {
+    overflow: hidden;
+    @include margin(null null 60px null);
+    
+    section {
+      &:nth-of-type(1) {
+        float: left;
+        
+        h1 {
+          text-transform: uppercase;
+          font-weight: 600;
+          letter-spacing: 2px;
+          color: $dark-gray;
+          font-size: 25px;
+          @include margin(0 null 5px null);
+        }
+        
+        span {
+          color: $light-gray;
+          font-size: 14px;
+          letter-spacing: 2px;
+        }
+      }
+      
+      &:nth-of-type(2) {
+        float: right;
+        
+        span {
+          &:before {
+            content: "#";
+          }
+          
+          font-size: 21px;
+          color: $light-gray;
+          letter-spacing: 1px;
+        }
+      }
+    }
+  }
+  
+  main {
+    border: 1px dashed $light-gray;
+    border-left-width: 0px;
+    border-right-width: 0px;
+    @include padding(30px null);
+    
+    section {
+      overflow: hidden;
+      
+      span {
+        float: left;
+        color: $dark-gray;
+        font-size: 16px;
+        letter-spacing: .5px;
+        
+        &:nth-of-type(1) {
+          width: 45%;
+          @include margin(null 5% null null);
+        }
+        
+        &:nth-of-type(2) {
+          width: 22.5%;
+          @include margin(null 5% null null);
+        }
+        
+        &:nth-of-type(2), &:nth-of-type(3) {
+          text-align: right;
+        }
+        
+        &:nth-of-type(3) {
+          width: 22.5%;
+        }
+      }
+    }
+    
+    section {
+      &:nth-of-type(1) {
+        @include margin(null null 30px null);
+        
+        span {
+          color: $light-gray;
+          text-transform: uppercase;
+          letter-spacing: 2px;
+          font-size: 13px;
+        }
+      }
+    }
+    
+    section {
+      &:nth-of-type(2) {
+        @include margin(null null 30px null);
+        
+        figure {
+          overflow: hidden;
+          @include margin(0);
+          @include margin(null null 20px null);
+          line-height: 160%;
+          
+          &:last-of-type {
+            @include margin(null null 0px null);
+          }
+        }
+      }
+    }
+    
+    section {
+      &:nth-of-type(3) {
+        span {
+          &:nth-of-type(1) {
+            width: 72.5%;
+            font-weight: bold;
+          }
+          
+          &:nth-of-type(2) {
+            margin-right: 0 !important;
+          }
+        }
+      }
+    }
+  }
+  
+  footer {
+    text-align: right;
+    @include margin(30px null null null);
+    
+    a {
+      font-size: 19px;
+      font-weight: bold;
+      text-decoration: none;
+      text-transform: uppercase;
+      position: relative;
+      letter-spacing: 1px;
+      
+      &:after {
+        content: "";
+        width: 0%;
+        height: 4px;
+        @include position(absolute, null 0 -10px null);
+        background-color: inherit;
+        @include transition(width .2s ease-in-out);
+      }
+      
+      &:hover {
+        &:after {
+          width: 100%;
+        }
+      }
+      
+      &:nth-of-type(1) {
+        color: $light-gray;
+        @include margin(null 30px null null);
+        
+        &:after {
+         background-color: $light-gray; 
+        }
+      }
+      
+      &:nth-of-type(2) {
+        color: $main;
+        
+        &:after {
+         background-color: $main; 
+        }
+      }
+    }
+  }
+}

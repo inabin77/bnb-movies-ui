@@ -1,0 +1,20 @@
+export const FETCH_MOVIES = "BNB/Cinemas/FETCH_MOVIES";
+export const FETCH_MOVIES_SUCCESS = "BNB/Cinemas/FETCH_MOVIES_SUCCESS";
+export const FETCH_MOVIES_ERROR = "BNB/Cinemas/FETCH_MOVIES_ERROR";
+
+export const ADD_MOVIE = "BNB/Cinemas/ADD_MOVIE";
+
+export const FETCH_MOVIE_BY_ID = "BNB/Cinemas/FETCH_MOVIES_BY_ID";
+export const FETCH_MOVIE_BY_ID_SUCCESS =
+  "BNB/Cinemas/FETCH_MOVIES_BY_ID_SUCCESS";
+export const FETCH_MOVIE_BY_ID_FAILURE =
+  "BNB/Cinemas/FETCH_MOVIES_BY_ID_FAILURE";
+
+export const UPDATE_MOVIE_BY_ID = "BNB/Cinemas/UPDATE_MOVIE_BY_ID";
+export const UPDATE_MOVIE_BY_ID_SUCCESS =
+  "BNB/Cinemas/UPDATE_MOVIE_BY_ID_SUCCESS";
+export const UPDATE_MOVIE_BY_ID_FAILURE =
+  "BNB/Cinemas/UPDATE_MOVIE_BY_ID_FAILURE";
+
+  export const DELETE_MOVIE =
+  "BNB/Cinemas/DELETE_MOVIE";

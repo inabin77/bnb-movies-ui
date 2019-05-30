@@ -1,0 +1,91 @@
+
+
+.pad-t-15 {
+  padding-top: 15px !important;
+}
+
+img {
+  vertical-align: middle;
+}
+
+img {
+  border: 0;
+}
+
+
+.col-sm-4 {
+  width: 33.33333333%;
+}
+
+h1,
+p {
+font-family: Lato;
+}
+
+.index-links {
+display: inline-block;
+color: #ff3e6c;
+font-size: 14px;
+font-weight: 500;
+margin-right: 16px;
+text-transform: uppercase;
+}
+
+.index-links > div {
+-webkit-border-radius: 24px;
+-moz-border-radius: 24px;
+border-radius: 24px;
+background-color: #ffffff;
+border: solid 1px #bfc0c6;
+padding: 16px 20px;
+}
+
+.show-movies .show-movie {
+margin-top: 15px;
+}
+
+.show-movies .show-movie .show-hall-name {
+font-size: 20px;
+margin: 0;
+line-height: 23px;
+padding: 40px 15px;
+background-color: #fff;
+border-right: 1px solid #ccc;
+border-bottom: 1px solid #ccc;
+}
+
+.pad-0 {
+padding: 0 !important;
+}
+
+.show-movies .show-movie .show-times {
+padding: 10px;
+background-color: #fff;
+/* border-left: 1px solid #ccc; */
+border-bottom: 1px solid #ccc;
+}
+
+.time-mark.time-mark-available {
+border-color: #03b49f;
+}
+
+.time-mark {
+width: 75px;
+margin: 4px;
+color: #444;
+height: 75px;
+font-size: 17px;
+padding: 8px 0;
+line-height: 20px;
+border-radius: 50%;
+text-align: center;
+display: inline-block;
+text-decoration: none;
+background-color: #fff;
+border: 2px solid #aaa;
+}
+
+.time-mark .hour {
+font-size: 16px;
+display: block;
+}
