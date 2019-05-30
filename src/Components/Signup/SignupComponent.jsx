@@ -95,6 +95,8 @@ const SignupForm = props => {
         <input
           name="dob"
           type="date"
+          min="1940-01-31"
+          max="2005-01-31"
           className={`form-control ${errors.dob &&
             touched.dob &&
             "is-invalid"}`}
